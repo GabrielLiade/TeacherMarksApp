@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:background="#f9e4b7">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="#f9e4b7"
+        >
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Les notes de mes élèves "
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30px"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+
+            />
+
+        <EditText
+            android:layout_marginTop="200px"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/editText_id"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Id"
+            app:layout_constraintBottom_toTopOf="@+id/editText_surname"
+            tools:layout_editor_absoluteX="117dp"
+            android:padding="50px"
+
+            />
+
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/editText_name"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nom de l'élève"
+            app:layout_constraintBottom_toTopOf="@+id/editText_surname"
+            tools:layout_editor_absoluteX="117dp"
+            android:padding="50px"
+            />
+
+
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/editText_surname"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Matière"
+            app:layout_constraintBottom_toTopOf="@+id/editText_marks"
+            tools:layout_editor_absoluteX="117dp"
+            android:padding="50px"
+            />
+
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/editText_marks"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Note / 20"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="280dp"
+            android:padding="50px"
+            android:layout_marginBottom="150px"
+            />
+
+
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/my_button_bg"
+            android:id="@+id/button_add"
+            android:layout_width="800px"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="add data"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="511dp"
+
+            android:layout_margin="20px"
+
+            />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/my_button_bg"
+            android:id="@+id/button_update"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:text="Update data "
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="422dp"
+            android:layout_margin="20px"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/my_button_bg"
+            android:id="@+id/button_delete"
+            android:layout_width="800px"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="delete data "
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="422dp"
+            android:layout_margin="20px"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note des élèves : "
+            android:layout_margin="30px"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/textView_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30px"
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
